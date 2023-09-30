@@ -2,7 +2,8 @@
 
 :root {
     --header-height: 3rem;
-    --hue-color: 250;
+    --hue-color: 230;
+
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -273,7 +274,7 @@ img {
 }
 
 .home__scroll {
-    /* */
+    display: none;
 }
 
 .home__scroll-button {
@@ -282,7 +283,7 @@ img {
 }
 
 .home__scroll-button:hover {
-    transform: translate(4px);
+    transform: translateY(4px);
 }
 
 .home__scroll-mouse {
@@ -298,4 +299,100 @@ img {
 
 .home__scroll-arrow {
     font-size: 20px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: var(--font-medium);   
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.button__icon {
+    font-size: 20px;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ABOUT */
+.about__img {
+    width: 200px;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-name {
+    font-size: var(--smaller-font-size);
+}
+
+.about__info-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about__info-title,
+.about__info-name {
+    display: block;
+    text-align: center;
+}
+
+.about__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* SKILLS */
+.skills__container {
+    row-gap: 0;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 32px;
+    color: var(--first-color);
+} 
+
+.skills__icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+    font-size: var(--h3-font-size);
+}
+
+.skills__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
 }
