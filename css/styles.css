@@ -402,6 +402,11 @@ img {
     transition: 0.4s;
 }
 
+.skills__list {
+    row-gap: 24px;
+    padding-left: 43.2px;
+}
+
 .skills__titles {
     display: flex;
     justify-content: space-between;
@@ -474,4 +479,18 @@ img {
 
 .skills__canva {
     width: 85%;
+}
+
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+    transform: rotate(-180deg);
 }
