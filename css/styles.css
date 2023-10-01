@@ -569,3 +569,13 @@ img {
 }
 
 /* SERVICES */
+.services__container {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services__content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 56px 8px 20px 24px;
+}
