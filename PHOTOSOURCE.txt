@@ -1,0 +1,25 @@
+All media used is for fair use.
+No copyright infringement intended.
+
+# portfolio1.png
+    source: https://e1.pxfuel.com/desktop-wallpaper/729/604/desktop-wallpaper-top-10-facial-recognition-apis-face-recognition.jpg
+
+# portfolio2.jpg
+    source: https://e0.pxfuel.com/wallpapers/527/193/desktop-wallpaper-information-systems-and-technologies-technology-and-information-systems-1280-x-800-technology.jpg
+
+# portfolio3.jpg
+    source: https://e1.pxfuel.com/desktop-wallpaper/768/275/desktop-wallpaper-php-coding-backend.jpg
+
+    let swiper = new Swiper('.portfolio__container', {
+    cssMode: true;
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    clickable: true,
+    keyboard: true,
+})
