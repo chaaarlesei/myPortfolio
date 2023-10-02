@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.5.8/swiper-bundle.min.css">
     <title>Charles.</title>
 </head>
 <body>
@@ -91,14 +92,14 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blob-img" x="0" y="-10" href="media/profile.png"/>
+                                <image class="home__blob-img" x="0" y="-10" href="assets/media/profile.png"/>
                             </g>
                         </svg>
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I am Charles</h1>
-                        <h3 class="home__subtitle">Frontend Developer</h3>
+                        <h1 class="home__title">Hi! I am Charles.</h1>
+                        <h3 class="home__subtitle">Backend Developer</h3>
                         <p class="home__description">Skilled in the realm of backend development, prioritizing the delivery of top-notch solutions and the establishment of robust functionality</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
@@ -122,7 +123,7 @@
             <span class="section__subtitle">My introduction</span>
 
             <div class="about__container container grid">
-                <img src="media/about.jpg" alt="" class="about__img">
+                <img src="assets/media/about.jpg" alt="" class="about__img">
 
                 <div class="about__data">
                     <p class="about__description">I'm a backend deleveoper, a experienced backend developer who thrives on creating resilient and scalable solutions to drive smooth user interactions.</p>
@@ -507,22 +508,22 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend Development</h4>
+                            <h4 class="services__modal-title">Backend <br> Development</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
                             </ul>
@@ -543,22 +544,22 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend Development</h4>
+                            <h4 class="services__modal-title">Backend <br> Development</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
                             </ul>
@@ -579,22 +580,22 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend Development</h4>
+                            <h4 class="services__modal-title">Backend <br> Development</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
 
                                 <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__icon"></i>
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Lorem ipsum dolor.</p>
                                 </li>
                             </ul>
@@ -602,6 +603,81 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My recent work</span>
+
+            <div class="portfolio__container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- P1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/media/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Facial Recognition</h3>
+                            <p class="portfolio__description">
+                                I've recently been deeply involved in the exciting world 
+                                of facial recognition technology. In essence, it's all 
+                                about training computers to recognize people based on their 
+                                facial features. It's used for enhancing security, enabling 
+                                convenient access control, and much more. Imagine your face 
+                                becoming your digital ID, that's the essence of what I've been 
+                                working on.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- P2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/media/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Information System</h3>
+                            <p class="portfolio__description">An information system is a structured 
+                                and organized framework that collects, processes, stores, and 
+                                disseminates data to support decision-making and various business 
+                                processes within an organization. It combines technology, people, 
+                                data, and processes to manage and utilize information effectively 
+                                for achieving organizational goals and objectives.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- P3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/media/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Website Backend Development</h3>
+                            <p class="portfolio__description">Backend development for a website involves
+                                creating and maintaining the server-side components that make a website 
+                                functional. It includes managing databases, handling user authentication, 
+                                ensuring data security, and executing server-side logic. In essence, 
+                                backend development is responsible for all the behind-the-scenes work 
+                                that enables a website to operate smoothly, store and retrieve data, and 
+                                provide dynamic content to users. It's the engine that powers the frontend, 
+                                ensuring a seamless and responsive user experience.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
         </section>
 
 
@@ -616,6 +692,7 @@
 
 
     <!-- JS -->
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+    <script src="assets/script/main.js"></script>
 </body>
-</html>
+</html>s
