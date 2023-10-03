@@ -696,7 +696,7 @@ img {
     width: 265px;
     border-radius: 8px;
     justify-self: center;
-    /* height: 139px; */
+    height: 139px;
 }
 
 .portfolio__title {
@@ -706,8 +706,37 @@ img {
 
 .portfolio__description {
     margin-bottom: var(--mb-0-75);
+    /* text-align: justify;
+    margin-right: var(--mb-1-5); */
 }
 
 .portfolio__button:hover .button__icon{
     transform: translateX(4px);
 }
+
+#sbn::after,
+#sbp::after {
+    content: '';
+}
+
+.swiper-portfolio-icon {
+    font-size: 32px;
+    color: var(--first-color);
+}
+
+#sbp {
+    left: -8px;
+}
+
+#sbn {
+    right: -8px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -40px;
+}
+
+.swiper-pagination-bullet-active {
+    color: var(--first-color);
+}
+

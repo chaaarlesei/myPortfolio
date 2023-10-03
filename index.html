@@ -6,7 +6,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="assets/style/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.5.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/style/swiper-bundle.min.css">
     <title>Charles.</title>
 </head>
 <body>
@@ -350,7 +350,7 @@
 
                     <div class="qualification__button button--flex" data-target='#work'>
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+                        Experience
                     </div>
                 </div>
                 
@@ -610,7 +610,7 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">My recent work</span>
 
-            <div class="portfolio__container container swiper">
+            <div class="portfolio__container container swiper mySwiper">
                 <div class="swiper-wrapper">
                     <!-- P1 -->
                     <div class="portfolio__content grid swiper-slide">
@@ -618,14 +618,7 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Facial Recognition</h3>
-                            <p class="portfolio__description">
-                                I've recently been deeply involved in the exciting world 
-                                of facial recognition technology. In essence, it's all 
-                                about training computers to recognize people based on their 
-                                facial features. It's used for enhancing security, enabling 
-                                convenient access control, and much more. Imagine your face 
-                                becoming your digital ID, that's the essence of what I've been 
-                                working on.</p>
+                            <p class="portfolio__description">Lorem ipsum dolor.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
@@ -639,12 +632,7 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Information System</h3>
-                            <p class="portfolio__description">An information system is a structured 
-                                and organized framework that collects, processes, stores, and 
-                                disseminates data to support decision-making and various business 
-                                processes within an organization. It combines technology, people, 
-                                data, and processes to manage and utilize information effectively 
-                                for achieving organizational goals and objectives.</p>
+                            <p class="portfolio__description">Lorem ipsum dolor.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
@@ -658,28 +646,28 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Website Backend Development</h3>
-                            <p class="portfolio__description">Backend development for a website involves
-                                creating and maintaining the server-side components that make a website 
-                                functional. It includes managing databases, handling user authentication, 
-                                ensuring data security, and executing server-side logic. In essence, 
-                                backend development is responsible for all the behind-the-scenes work 
-                                that enables a website to operate smoothly, store and retrieve data, and 
-                                provide dynamic content to users. It's the engine that powers the frontend, 
-                                ensuring a seamless and responsive user experience.</p>
+                            <p class="portfolio__description">Lorem ipsum dolor.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
+                        
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    
                 </div>
-        </section>
 
+                <div class="swiper-button-next" id="sbn">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-button-prev" id="sbp">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                
+                <div class="swiper-pagination" id="sp"></div>
+            </div>
+        </section>
 
 
         
@@ -692,7 +680,7 @@
 
 
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+    <script src="assets/script/swiper-bundle.min.js"></script>
     <script src="assets/script/main.js"></script>
 </body>
-</html>s
+</html>

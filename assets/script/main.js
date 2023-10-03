@@ -67,9 +67,9 @@ tabs.forEach(tab =>{
 })
 
 // SERVICES
-const modalViews = document.querySelectorAll('.services__modal')
-const modalBtns = document.querySelectorAll('.services__button')
-const modalCloses = document.querySelectorAll('.services__modal-close')
+const modalViews = document.querySelectorAll('.services__modal'),
+    modalBtns = document.querySelectorAll('.services__button'),
+    modalCloses = document.querySelectorAll('.services__modal-close')
 
 let modal = function(modalClick) {
     modalViews[modalClick].classList.add('active-modal')
@@ -90,32 +90,15 @@ modalCloses.forEach((modalClose) => {
 })
 
 // PORTFOLIO
-// const swiper = new Swiper('.portfolio__container', {
-
-//     loop: true,
-  
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
-
-  const swiper = new Swiper('.portfolio__container', {
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
     loop: true,
     navigation: {
-        // nextEl: '.swiper-button-next',
-        // prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: '.swiper-pagination'
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    mousewheel: true,
-    clickable: true,
-    keyboard: true,
-})
+});
