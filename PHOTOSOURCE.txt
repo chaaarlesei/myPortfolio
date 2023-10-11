@@ -9,17 +9,3 @@ No copyright infringement intended.
 
 # portfolio3.jpg
     source: https://e1.pxfuel.com/desktop-wallpaper/768/275/desktop-wallpaper-php-coding-backend.jpg
-
-    let swiper = new Swiper('.portfolio__container', {
-    cssMode: true;
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination'
-    },
-    mousewheel: true,
-    clickable: true,
-    keyboard: true,
-})
